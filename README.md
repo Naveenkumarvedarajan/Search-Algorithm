@@ -20,13 +20,53 @@ To write a program to perform linear search and binary search using python progr
 i)	#Use a linear search method to match the item in a list.
 ```
 
-
+Program for linear search method to match the item in a list
+Developed by:
+RegisterNumber: 
+'''
+def linearSearch(array,n,k):
+    for i in range(n):
+        if array [i]==k:
+            return i
+    return -1
+array = eval(input())
+array.sort()
+k = eval(input()) 
+n=len(array)
+print(array)
+result=linearSearch(array,n,k)
+if result==-1:
+    print("Element not found")
+else:
+    print("Element found at index: ",result)
 
 ```
 ii)	# Find the element in a list using Binary Search(Iterative Method).
 ```
 
-
+Program to find the element in a list using Binary Search(Iterative Method)..
+Developed by:
+RegisterNumber: 
+'''
+def binarySearchIter(array, k, low, high):
+    while low<=high:
+        mid=low+(high-low)//2
+        if array[mid]==k:
+            return mid
+        elif array[mid]<k:
+            low=mid+1
+        else:
+            high=mid-1
+    return -1
+array=eval(input())
+array.sort()
+k=eval(input())
+print(array)
+result=binarySearchIter(array,k,0,len(array)-1)
+if result==-1:
+    print("Element not found")
+else:
+    print("Element found at index: ",result)
 
 
 
@@ -34,12 +74,39 @@ ii)	# Find the element in a list using Binary Search(Iterative Method).
 iii)	# Find the element in a list using Binary Search (recursive Method).
 ```
 
-
+Program to find the element in a list using Binary Search (recursive Method).
+Developed by: your name
+RegisterNumber: 
+'''
+def BinarySearch(arr, k, low, high):
+    while low<=high:
+        mid=low+(high-low)//2
+        if array[mid]==k:
+            return mid
+        elif array[mid]<k:
+            low=mid+1
+        else:
+            high=mid-1
+    return -1
+    
+array= eval(input())
+array.sort()
+k = eval(input()) 
+print(array)
+result=BinarySearch(array,k,0,len(array)-1)
+if result==-1:
+    print("Element not found")
+else:
+    print("Element found at index: ",result)
 
 
 
 ```
 ## Sample Input and Output
+Linear search
+![Screenshot 2024-01-03 103312](https://github.com/Naveenkumarvedarajan/Search-Algorithm/assets/147140428/a96af81c-b7fd-426d-8877-37881e5ebed4)
+Binary search(iterative Method)
+![image](https://github.com/Naveenkumarvedarajan/Search-Algorithm/assets/147140428/cc7098e7-9695-45a2-a338-d270482ac5fa)
 
 
 
